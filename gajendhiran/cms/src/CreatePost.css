@@ -1,0 +1,138 @@
+
+
+.create-post-container {
+  
+  background-color: #f9fafb;
+  min-height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+.post-card {
+  /* background-color: #ffffff; */
+  background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(4, 125, 197, 1) 72%, rgba(0, 212, 255, 1) 100%);
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 30px 40px;
+  transition: all 0.3s ease;
+}
+
+.post-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #eff1f3;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #dedfe1;
+}
+
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 15px;
+  outline:#2563eb;
+  transition: border 0.2s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #2563eb;
+}
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.submit-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #1e40af;
+}
+
+
+.send-icon {
+  font-size: 18px;
+}
+
+
+@media (max-width: 600px) {
+  .create-post-container {
+    align-items: center;
+    padding: 30px 10px;
+  }
+
+  .post-card {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-title {
+    font-size: 20px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .post-card {
+    max-width: 700px;
+    padding: 25px 35px;
+  }
+
+  .post-title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .create-post-container {
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  .post-card {
+    max-width: 800px;
+  }
+}
