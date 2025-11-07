@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";  // ✅ Add this
+import { useNavigate } from "react-router-dom"; 
 import "../CreatePost.css";
 
 function CreatePost() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const navigate = useNavigate(); // ✅ useNavigate hook
+  const navigate = useNavigate(); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,14 +20,13 @@ function CreatePost() {
       });
 
       if (response.ok) {
-        alert("✅ Post Created Successfully!");
+        alert(" Post Created Successfully!");
         setTitle("");
         setContent("");
 
-        // ✅ Redirect to home page after success
         navigate("/");
       } else {
-        alert("❌ Failed to create post");
+        alert(" Failed to create post");
       }
     } catch (error) {
       console.error("Error:", error);
